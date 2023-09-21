@@ -5,9 +5,23 @@ date: "2023-09-21"
 output: html_document
 ---
 
+```{r setup}
 library(moderndive)
+library(tidyverse)
+```
 
 # Problem 1
 
-##load the early_january_weather dataset
+##The early_january_weather dataset
+```{r}
 data("early_january_weather")
+mean(early_january_weather $ temp)
+```
+
+##A short description of the dataset
+
+* We have 15 variables in this dataset, including origin  year month   day  hour  temp  dewp humid wind_dir wind_speed wind_gust precip.
+
+* the size of the dataset is 358 rows * 15 cols
+
+* the mean temperature is 39.58212
